@@ -6,7 +6,7 @@
 
 def which_triangle(a, b, c):
     # Здесь нужно написать код
-    123
+    
     return type_triangle
 
 # Ниже НИЧЕГО НЕ НАДО ИЗМЕНЯТЬ
