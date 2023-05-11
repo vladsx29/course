@@ -15,7 +15,11 @@
 
 def josephus_task(num_people, kill_num):
     # Здесь нужно написать код
-    return survivor
+    survivor = 0
+    for i in range(1, num_people + 1):
+        survivor = (survivor + kill_num) % i
+    return survivor + 1
+
 
 # Ниже НИЧЕГО НЕ НАДО ИЗМЕНЯТЬ
 

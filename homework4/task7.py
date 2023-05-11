@@ -4,6 +4,10 @@
 
 def move_zeros(lst):
     # Здесь нужно написать код
+    new_list = lst.count(0)
+    for i in range(new_list):
+        lst.remove(0)
+    lst.extend([0] * new_list)
     return lst
 
 # Ниже НИЧЕГО НЕ НАДО ИЗМЕНЯТЬ

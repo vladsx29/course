@@ -5,6 +5,13 @@
 
 def create_phone_number(num_tuple):
     # Здесь нужно написать код
+    str_phone = ''
+    phone = list(num_tuple)
+    phone.insert(0, '(')
+    phone.insert(4, ') ')
+    phone.insert(8, '-')
+    for idx in phone:
+        str_phone += str(idx)
     return str_phone
 
 # Ниже НИЧЕГО НЕ НАДО ИЗМЕНЯТЬ

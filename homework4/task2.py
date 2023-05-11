@@ -5,8 +5,14 @@
 # [[3, 2, 1], [4, 6, 5], [], [9, 7, 8]] -->  [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
 
+
 def flatten_and_sort(array):
     # Здесь нужно написать код
+    new_list = []
+    for a in array:
+        new_list.extend(a)
+    result_list = sorted(new_list)
+
     return result_list
 
 # Ниже НИЧЕГО НЕ НАДО ИЗМЕНЯТЬ
