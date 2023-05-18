@@ -20,6 +20,13 @@
 
 def everything_for_your_cat(cats_data):
     # Здесь нужно написать код
+    our_str = ""
+    result = {}
+    for nickname, age, name, lastname in cats_data:
+        full_name = f'{name} {lastname}'
+        result.setdefault(full_name, []).append(f'{nickname}, {age}')
+    for full_name, cats in result.items():
+        our_str += f'{full_name}: {"; ".join(cats)}\n'
     return our_str
 
 # Ниже НИЧЕГО НЕ НАДО ИЗМЕНЯТЬ

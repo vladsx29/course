@@ -15,6 +15,17 @@
 
 def scrabble(word):
     # Здесь нужно написать код
+    letter_points = {
+        1: 'авеёинорст',
+        2: 'дклмпу',
+        3: 'бгья',
+        4: 'йы',
+        5: 'жзхцч',
+        8: 'фшэю',
+        10: 'щ',
+        15: 'ъ'
+    }
+    points = sum(points for letter in word for points, letters in letter_points.items() if letter in letters)
     return points
 
 # Ниже НИЧЕГО НЕ НАДО ИЗМЕНЯТЬ
